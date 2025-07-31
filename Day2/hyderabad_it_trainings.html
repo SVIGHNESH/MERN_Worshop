@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad IT Trainings - One-Stop Destination for Software Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: #28a745;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            
+            margin-right: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #28a745;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="100" cy="100" r="2" fill="white" opacity="0.3"/><circle cx="300" cy="200" r="1" fill="white" opacity="0.4"/><circle cx="500" cy="150" r="1.5" fill="white" opacity="0.2"/><circle cx="700" cy="300" r="1" fill="white" opacity="0.3"/><circle cx="900" cy="250" r="2" fill="white" opacity="0.2"/></svg>') repeat;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .hero-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .hero-features li::before {
+            content: '✓';
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        
+
+        /* Welcome Section */
+        .welcome {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .welcome-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .welcome-text {
+            flex: 2;
+        }
+
+        .welcome h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            color: #666;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .register-box {
+            flex: 1;
+            background: #28a745;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .register-btn {
+            background: white;
+            color: #28a745;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 80px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Batches Section */
+        .batches {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .batches-table {
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .batches-table th {
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .batches-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .batches-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .register-link {
+            color: #dc3545;
+            text-decoration: none;
+        }
+
+        /* Training Modes */
+        .training-modes {
+            padding: 60px 0;
+        }
+
+        .modes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .mode-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .mode-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .mode-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #28a745;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 48px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 18px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 60px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .testimonial h4 {
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Training Approach */
+        .training-approach {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .approach-item {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .approach-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .approach-item h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #28a745;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .welcome-content {
+                flex-direction: column;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .courses-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://hyderabadittrainings.com/images/logo.jpg" alt="logo">
+                <span style="margin-left: 10px;">HYDERABAD<br>IT TRAININGS</span>
+            </div>
+            <div class="contact-info">
+                <span>📞 +91 8106 888 288</span>
+                <span>✉️ info@hyderabadittrainings.com</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+           
+            <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#courses">COURSES</a></li>
+                <li><a href="#instructors">INSTRUCTORS</a></li>
+                <li><a href="#placements">PLACEMENTS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-subtitle">ONE-STOP DESTINATION FOR SOFTWARE COURSES</div>
+                <h1>HYDERABAD IT TRAININGS</h1>
+                <ul class="hero-features">
+                    <li>IT in HYDERABAD</li>
+                    <li>info@hyderabadittrainings.com</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome" id="about">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Welcome to Hyderabad IT Trainings</h2>
+                    <p>Hyderabad IT Trainings is a renowned name training institute delivering classroom and online training in Java, SQL and MS, Android. We are Providing all the Software Technologies which are in high demand in the market and providing job oriented Trainings.</p>
+                    <p>Hyderabad IT Trainings is a leading training and placement institute specializing in advanced corporate and industrial requirements. We provide our students with real-time experience in leading MNC companies. We are continuously to our efficient approach towards being effective with online students to meet every opportunity.</p>
+                    <p>Hyderabad IT Trainings have emerged as a premier training institute delivering classroom and online training courses. Understand IT Trainings have instructors on the basis of booking and taking career and Business technologies. To place from Hyderabad IT Trainings helps them meet and equipped advance training services.</p>
+                </div>
+                <div class="register-box">
+                    <h3>Register Now</h3>
+                    <p>Join thousands of students who have transformed their careers with us.</p>
+                    <form>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <input type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
+                                            <input type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div> 
+                                            <input type="text" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <textarea placeholder="Message"></textarea>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                   
+                                     
+                                </div>
+                            </form>
+                    <button class="register-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div style= "  width: 80px; height: 60px; background: #007acc; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">.NET</div>
+                    <h3>ONLINE DOT NET TRAINING</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #f89820; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">JAVA</div>
+                    <h3>Java Full Stack</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #306998; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Python</div>
+                    <h3>Python Fullstack</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #ff6b35; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">AI</div>
+                    <h3>Artificial Intelligence</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #61dafb; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold;">React</div>
+                    <h3>React JS</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #f7df1e; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold;">JS</div>
+                    <h3>UI/UX Designing</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #8cc84b; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Node</div>
+                    <h3>Node JS</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #007acc; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Web</div>
+                    <h3>Web Technology</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #00758f; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">SQL</div>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #306998; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Data</div>
+                    <h3>Digital Marketing</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #306998; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Python</div>
+                    <h3>Python Fullstack</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #e34c26; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Web</div>
+                    <h3>Web Designing</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #092e20; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Django</div>
+                    <h3>Django</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #007acc; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">DM</div>
+                    <h3>Digital Marketing</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #ff6900; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">SEO</div>
+                    <h3>SEO</h3>
+                </div>
+                <div class="course-card">
+                    <div style="width: 80px; height: 60px; background: #4285f4; margin: 0 auto 15px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Ads</div>
+                    <h3>Google Adwords</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Batches -->
+    <section class="batches">
+        <div class="container">
+            <h2 class="section-title">New Batches</h2>
+            <table class="batches-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Date</th>
+                        <th>Timings</th>
+                        <th>Duration</th>
+                        <th>Trainer</th>
+                        <th>Register</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python Full Stack Development</td>
+                        <td>01 - July - 2024</td>
+                        <td>09:00 PM - 10:30 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Full Stack Development</td>
+                        <td>01 - July - 2024</td>
+                        <td>09:00 PM - 10:30 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Java Full Stack Development</td>
+                        <td>03 - July - 2024</td>
+                        <td>07:30 PM - 09:00 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>UI Development</td>
+                        <td>05 - July - 2024</td>
+                        <td>08:00 PM - 09:00 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>ReactJS Development</td>
+                        <td>05 - July - 2024</td>
+                        <td>07:30 PM - 09:00 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Python Analytics</td>
+                        <td>06 - July - 2024</td>
+                        <td>07:30 PM - 09:00 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Web Designing</td>
+                        <td>06 - July - 2024</td>
+                        <td>07:30 PM - 09:00 PM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>Digital Marketing</td>
+                        <td>08 - July - 2024</td>
+                        <td>11:00 PM - 12:00 AM</td>
+                        <td>3 Months</td>
+                        <td>Mr. Software</td>
+                        <td><a href="#" class="register-link">Register Now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Training Modes -->
+    <section class="training-modes">
+        <div class="container">
+            <h2 class="section-title">Training Modes</h2>
+            <div class="modes-grid">
+                <div class="mode-card">
+                    <div style="width: 60px; height: 60px; background: #007acc; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">👥</div>
+                    <h3>Classroom Training</h3>
+                    <p>Traditional face-to-face learning environment with direct interaction between instructors and students</p>
+                </div>
+                <div class="mode-card">
+                    <div style="width: 60px; height: 60px; background: #28a745; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">💻</div>
+                    <h3>Online Training</h3>
+                    <p>Flexible online classes that can be attended from anywhere with real-time programs</p>
+                </div>
+                <div class="mode-card">
+                    <div style="width: 60px; height: 60px; background: #ffc107; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">🏢</div>
+                    <h3>Corporate Training</h3>
+                    <p>Customized training programs for organizations to upskill their teams with latest technology</p>
+                </div>
+                <div class="mode-card">
+                    <div style="width: 60px; height: 60px; background: #dc3545; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📹</div>
+                    <h3>Video Based Training</h3>
+                    <p>Self-paced learning with recorded video sessions that can be accessed anytime, anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>IT Experts as Trainers</h3>
+                    <p>Learning is simplified and a professional when we well experienced in real time. Our experts support the trainers are well experienced in real time projects</p>
+                </div>
+                <div class="feature">
+                    <h3>Real Hands-on Training</h3>
+                    <p>We believe that theory alone cannot make a successful developer. So, we ensure plenty in Hyderabad IT Trainings that you get real-time and practical training</p>
+                </div>
+                <div class="feature">
+                    <h3>Placement Assistance</h3>
+                    <p>Our career support and active guidance for interview assistance and we ensure 24/7 training of our live company visits and help them find jobs</p>
+                </div>
+                <div class="feature">
+                    <h3>Affordable Fees</h3>
+                    <p>All our courses are with Quality training and still prices is work of Hyderabad IT Trainings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>31,000+</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25,000+</h3>
+                    <p>Students Placed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>39,000+</h3>
+                    <p>Happy Students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Students What they say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #007acc; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">S</div>
+                    <p>"One of the best institutions for python learning solutions and they have got a development mindset and gained it professionally. My sincere thanks are appreciated to Hyderabad IT Trainings."</p>
+                    <h4>Sreehari Sivanhara</h4>
+                    <div style="color: #ffc107; margin-top: 10px;">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #28a745; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">R</div>
+                    <p>"Hi there if you'd like to get professional advices. So, we ensure plenty in Hyderabad IT Trainings that you get real-time and practical training from trainers from this institute. Hyderabad Thanks are appreciated to Hyderabad IT Trainings."</p>
+                    <h4>Ravi Kannaphan</h4>
+                    <div style="color: #ffc107; margin-top: 10px;">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #dc3545; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">V</div>
+                    <p>"I was in a good development mindset and gained it professionally from this institute of training helped me to learn the core of every programming language and got interested towards this programming language. Thanks a lot."</p>
+                    <h4>Vaishnavi</h4>
+                    <div style="color: #ffc107; margin-top: 10px;">★★★★★</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #ffc107; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">S</div>
+                    <p>"Complete guidance in interview with clear and basic concepts. All the way of training helped me to learn and get better of this professional knowledge. From the way of training helped me to learn the core."</p>
+                    <h4>Santhii Sivanhara</h4>
+                    <div style="color: #ffc107; margin-top: 10px;">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Placements -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Recent Placements</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #007acc; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">A</div>
+                    <h4>Congratulations</h4>
+                    <p>Akanksha got placed in Infosys</p>
+                    <div style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; display: inline-block; margin-top: 10px;">🎉</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #28a745; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">S</div>
+                    <h4>Congratulations</h4>
+                    <p>Sandeep got placed in Accenture</p>
+                    <div style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; display: inline-block; margin-top: 10px;">🎉</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #dc3545; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">V</div>
+                    <h4>Congratulations</h4>
+                    <p>Vinod got placed in TCS</p>
+                    <div style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; display: inline-block; margin-top: 10px;">🎉</div>
+                </div>
+                <div class="testimonial">
+                    <div style="width: 80px; height: 80px; background: #ffc107; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">N</div>
+                    <h4>Congratulations</h4>
+                    <p>Naveen got placed in Wipro</p>
+                    <div style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 15px; display: inline-block; margin-top: 10px;">🎉</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Approach -->
+    <section class="training-approach">
+        <div class="container">
+            <h2 class="section-title">Our Training Approach</h2>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #007acc; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📚</div>
+                    <h3>Theory</h3>
+                    <p>Comprehensive theoretical foundation</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #28a745; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">💼</div>
+                    <h3>Project Work</h3>
+                    <p>Real-world project experience</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #ffc107; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📝</div>
+                    <h3>Assignments</h3>
+                    <p>Regular practice assignments</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #dc3545; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">🏆</div>
+                    <h3>Certification</h3>
+                    <p>Industry recognized certificates</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #6f42c1; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">🔄</div>
+                    <h3>Regular Progress</h3>
+                    <p>Continuous progress monitoring</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #fd7e14; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">💬</div>
+                    <h3>Interview Preparation</h3>
+                    <p>Mock interviews and guidance</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #20c997; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">📊</div>
+                    <h3>Resume Marketing</h3>
+                    <p>Professional resume building</p>
+                </div>
+                <div class="approach-item">
+                    <div style="width: 60px; height: 60px; background: #e83e8c; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">🤝</div>
+                    <h3>Placement Support</h3>
+                    <p>Complete placement assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Students Placed In -->
+    <section class="training-modes">
+        <div class="container">
+            <h2 class="section-title">Our Students Placed In</h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 40px 0;">
+                <div style="background: #dc3545; color: white; padding: 15px 30px; border-radius: 5px;">TCS</div>
+                <div style="background: #17a2b8; color: white; padding: 15px 30px; border-radius: 5px;">Infosys</div>
+                <div style="background: #6c757d; color: white; padding: 15px 30px; border-radius: 5px;">Accenture</div>
+                <div style="background: #28a745; color: white; padding: 15px 30px; border-radius: 5px;">Wipro</div>
+                <div style="background: #dc3545; color: white; padding: 15px 30px; border-radius: 5px;">Cognizant</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hyderabad IT Trainings</h3>
+                    <p>Hyderabad IT Trainings offers job oriented training in various technologies like Java, Python, ReactJS, NodeJS and many more with experienced trainers and placement assistance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Reach Us</h3>
+                    <ul>
+                        <li>📍 Opposite SBI, 2nd Floor</li>
+                        <li>Beside Reliance Digital</li>
+                        <li>Ameerpet, Hyderabad</li>
+                        <li>📞 +91 8106 888 288</li>
+                        <li>✉️ info@hyderabadittrainings.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2024 at Hyderabad IT Trainings. Full Stack Java | Python | UI UX | Data Science | PHP | Digital Marketing | Hyderabad.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation for stats
+        const stats = document.querySelectorAll('.stat-item h3');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = parseInt(target.textContent);
+                    let currentValue = 0;
+                    const increment = finalValue / 100;
+                    
+                    const timer = setInterval(() => {
+                        currentValue += increment;
+                        if (currentValue >= finalValue) {
+                            target.textContent = finalValue + '+';
+                            clearInterval(timer);
+                        } else {
+                            target.textContent = Math.floor(currentValue) + '+';
+                        }
+                    }, 20);
+                }
+            });
+        });
+
+        stats.forEach(stat => observer.observe(stat));
+
+        // Mobile menu toggle (basic implementation)
+        const mobileMenuBtn = document.createElement('button');
+        mobileMenuBtn.innerHTML = '☰';
+        mobileMenuBtn.style.cssText = 'display: none; background: none; border: none; font-size: 24px; cursor: pointer;';
+        
+        if (window.innerWidth <= 768) {
+            document.querySelector('.nav-content').appendChild(mobileMenuBtn);
+            mobileMenuBtn.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

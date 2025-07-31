@@ -1,0 +1,11 @@
+.box2{
+    width: 60px;
+    height: inherit;
+    border: solid 2px salmon;
+    position: sticky;
+    top: 0px;
+
+}
+.box1:hover{
+    
+}
