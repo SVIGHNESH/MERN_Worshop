@@ -33,16 +33,30 @@
 
 
 //Conditionals 
-let age = 60;
-if(age < 18 ){
-    console.log("You Are eligible")
-}
-else if (age < 38){
-    console.log("Yout are super eligible")
-}
-else{
-    console.log("Ypu are super super Eligible ")
-}
+// let age = 60;
+// if(age < 18 ){
+//     console.log("You Are eligible")
+// }
+// else if (age < 38){
+//     console.log("You are super eligible")
+// }
+// else{
+//     console.log("You are super super Eligible ")
+// }
 
 
+// let age = [243,24,2,3,242]
+// console.log(typeof age)
 
+//type conversion 
+//implicit
+
+// let age = 29;
+// let num = "10";
+// console.log(num+age);
+
+
+//expplicit
+
+let age = "30.45";
+console.log(   Number(age))
