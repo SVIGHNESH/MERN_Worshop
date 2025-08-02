@@ -53,7 +53,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 670px;
+  height: 770px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@ body {
   justify-content: center;
   gap: 0;
   margin-top: 12px;
-  max-width: 470px;
+  max-width: 770px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
@@ -201,7 +201,7 @@ body {
   display: flex;
   gap: 18px;
   padding: 36px 5vw 18px 5vw;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .reason-box {
@@ -278,8 +278,11 @@ body {
 }
 
 .faq-form {
-  margin: 20px auto 0 auto;
-  max-width: 470px;
+  margin: 20px auto  auto;
+  padding-bottom: 30px;
+  max-width: 770px;
+  max-height: 770px;
+
   text-align: center;
 }
 .faq-form p {
@@ -328,7 +331,7 @@ footer {
   font-size: 1rem;
 }
 .footer-top {
-  max-width: 1100px;
+  max-width: 1600px;
   margin: 0 auto 20px auto;
 }
 .footer-top p {
