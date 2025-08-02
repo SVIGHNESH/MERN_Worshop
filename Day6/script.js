@@ -74,7 +74,7 @@ let name = " Vighnesh ";
 // console.log(name.substr(1,5))
 //console.log(name.replace("V","R"))
 //console.log(name.replaceAll("h","R"))
-
+// console.log(name.includes("y"))
 
 // for(let i = name.length;i >= 0;i--){
 //     console.log(name.charAt(i));
