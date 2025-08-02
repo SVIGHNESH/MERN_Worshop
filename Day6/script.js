@@ -58,5 +58,48 @@
 
 //expplicit
 
-let age = "30.45";
-console.log(   Number(age))
+// let age = 30;
+// console.log(  typeof parseInt(age))
+
+
+let name = " Vighnesh ";
+// console.log(name.length)
+// console.log(name.toLowerCase())
+// console.log(name.toUpperCase())
+// console.log(name.trim())
+// console.log(name.charAt(4))
+// console.log(name.indexOf("i"))
+// console.log(name.lastIndexOf("h"))
+// console.log(name.slice(2,5));
+// console.log(name.substr(1,5))
+//console.log(name.replace("V","R"))
+//console.log(name.replaceAll("h","R"))
+
+
+// for(let i = name.length;i >= 0;i--){
+//     console.log(name.charAt(i));
+// }
+
+// console.log(name.split("").reverse().join("").trim());
+
+// let reverseStr = '';
+// for(let i = name.length ;i>=0;i--){
+//         reverseStr += name.charAt(i);
+// }
+
+// console.log(reverseStr)
+
+let PalindromeEx = 'madam';
+let reverseEx = "";
+
+for(let i = PalindromeEx.length ;i>=0;i--){
+        reverseEx += PalindromeEx.charAt(i);
+}
+
+if(PalindromeEx == reverseEx){
+    console.log("True ; it is the palindrome");
+}
+else{
+    console.log("False ; it is not the palindrome");
+
+}
