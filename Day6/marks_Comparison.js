@@ -20,3 +20,6 @@ else if (marks > 35 ){
     console.log("Your are passed!!!!");
     
 }
+else{
+    console.log("You are Failed");
+}
