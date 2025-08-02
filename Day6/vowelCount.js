@@ -1,4 +1,4 @@
-let Vowels = "aeiou"
+let Vowels = "aeiouAEIOU"
 let Vowcount = 0;
 let ConstCounts = 0;
 let Str = "Vighnesh"
