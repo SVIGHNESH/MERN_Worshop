@@ -1,0 +1,2 @@
+const str = "My name is the Vighnesh Shukla";
+console.log(str.replaceAll(" ","-"))
