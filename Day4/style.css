@@ -175,7 +175,7 @@ body {
   color: #fff;
   text-shadow: 0 4px 16px #000, 0 0 10px #000;
   opacity: 0.85;
-  pointer-events: none;
+  pointer-events:stroke;
 }
 .carousel-next {
   position: absolute;
