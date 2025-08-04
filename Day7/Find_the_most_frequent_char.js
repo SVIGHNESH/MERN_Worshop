@@ -39,9 +39,9 @@ for (let i = 0; i < str.length; i++) {
         }
     }
     if (count > maxCount) {
-        maxCount = count;
+    maxCount = count;
         mostFrequentChar = char;
     }
 }
 
-console.log(mostFrequentChar);
+console.log(mostFrequentChar,"is Repeated",maxCount,"times ");
