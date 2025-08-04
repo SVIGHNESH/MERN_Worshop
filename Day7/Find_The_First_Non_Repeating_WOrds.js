@@ -3,7 +3,7 @@
 // input : "aabbcbbaa"
 // output : c 
 
-const word = "aabccc"
+const word = "aabbcbbaa"
 
 for(let i = 0 ;i<word.length;i++){
     let isUnique = true;
