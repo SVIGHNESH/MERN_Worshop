@@ -1,19 +1,31 @@
-function countWords(str) {
+let str = "This is the Example of the String to COunt the Words "
     let count = 0;
+    let word = "";
     let inWord = false;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] !== ' ' && str[i] !== '\n' && str[i] !== '\t') {
-            if (!inWord) {
-                count++;
-                inWord = true;
-            }
-        } else {
-            inWord = false;
+    // for (let i = 0; i < str.length; i++) {
+    //     if (str[i] !== ' ' && str[i] !== '\n') {
+    //         if (!inWord) {
+    //             count++;
+    //             inWord = true;
+    //         }
+    //     } else {
+    //         inWord = false;
+    //     }
+    // }
+
+
+
+    for (let i of str){
+        if(i!=" "){
+            word+=i;
+        }
+        else if(str){
+            count++;
+            word="";
         }
     }
-    return count;
-}
+    if(word){
 
-// Example usage:
-const text = "Hello world! This is a test.";
-console.log(countWords(text)); // Output: 6
+        count +=1;
+    }
+    console.log(count);
