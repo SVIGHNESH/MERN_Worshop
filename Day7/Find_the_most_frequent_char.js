@@ -2,7 +2,6 @@
 // input : "javascript"
 // output : "a"
 
-const str = "vighnesh"
 
 // const charCount = {};
 // for(let i = 0 ; i < str.length;i++){
@@ -26,6 +25,7 @@ const str = "vighnesh"
 
 //     console.log(mostFrequentChar);
 
+const str = "aba"
 
 let mostFrequentChar = '';
 let maxCount = 0;
