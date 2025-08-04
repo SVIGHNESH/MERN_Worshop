@@ -12,6 +12,7 @@ for(let i = 0 ;i<word.length;i++){
             isUnique = false;
             break;
         }
+
     }
     if(isUnique){
         console.log(word[i]);
