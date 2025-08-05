@@ -54,25 +54,39 @@
 let str = "a-bC-dEF-ghIj"
 let alpha = ""
 let result = ""
+// for(let i of str){
+//     if(!(i.toLowerCase() == i.toUpperCase())){
+//          alpha = i + alpha
+//     }
+// }
+
+// console.log(alpha)
+
+
+// let alphaIndex = 0;
+// for(let i of str){
+//     if(!(i.toLowerCase() == i.toUpperCase())){
+//         result += alpha[alphaIndex++];
+//     }
+//     else{
+//         result += i;
+//     }
+// }
+// console.log(result)
+
+
 for(let i of str){
-    if(!(i.toLowerCase() == i.toUpperCase())){
-         alpha = i + alpha
+    if(i != "-"){
+        alpha = i + alpha;
     }
 }
-
-console.log(alpha)
-
-
-let alphaIndex = 0;
 for(let i of str){
-    if(!(i.toLowerCase() == i.toUpperCase())){
-        result += alpha[alphaIndex++];
+    if(i!="-"){
+        result += alpha[0];
+        alpha = alpha.slice(1)
     }
     else{
         result += i;
     }
 }
 console.log(result)
-
-
-
