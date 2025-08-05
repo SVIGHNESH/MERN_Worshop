@@ -19,5 +19,6 @@ while (left < right) {
         right--;
     }
 }
-console.log(arr.join(''));
+
+console.log(arr.join());
 
