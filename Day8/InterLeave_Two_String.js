@@ -3,7 +3,7 @@
 //output : "a1b2c3"
 
 let str1 = "abc"
-let str2 = "123456"
+let str2 = "3456"
 
 let result = "";
 let i = 0, j = 0;
