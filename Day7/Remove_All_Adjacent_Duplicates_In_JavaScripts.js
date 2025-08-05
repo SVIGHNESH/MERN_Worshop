@@ -19,16 +19,16 @@ for(let i of str){
 console.log(w)
 
 
-let word = "aaaaaaaaab"
+// let word = "aaaaaaaaab"
 
-let c = ""
-for(let i of word){
-    if(i== c[c.length - 1 ]){
-        c = c.slice(0,c.length-1)
-    }
-    else{
-        c += i 
-    }
-}
+// let c = ""
+// for(let i of word){
+//     if(i== c[c.length - 1 ]){
+//         c = c.slice(0,c.length-1)
+//     }
+//     else{
+//         c += i 
+//     }
+// }
 
-console.log(c)
+// console.log(c)
