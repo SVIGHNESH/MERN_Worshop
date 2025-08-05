@@ -16,7 +16,7 @@
 //     console.log(result)
 
 
-let str = "aaaaaaab"
+let str = "aaaaaaabwwwrssssfasseee"
 
 let result = ""
 let count = 1 ;
