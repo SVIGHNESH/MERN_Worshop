@@ -1,7 +1,7 @@
 // input : John Ronald Reuel Tolkien
 // output : J. R. R. Tolkien
 
-let name = "Vighnesh Shukla"
+let name = "John Ronald Reuel Tolkien"
 
 let arr = name.split(" ");
 let result = "";
