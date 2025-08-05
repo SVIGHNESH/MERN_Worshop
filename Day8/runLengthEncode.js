@@ -1,4 +1,6 @@
 //input : "aaabbcddd"
+// output : "a3b2c1d3"
+
 let str = "aaabbcdd"
 
     let result = "";
@@ -14,5 +16,4 @@ let str = "aaabbcdd"
     console.log(result)
 
 
-// output : "a3b2c1d3"
 
