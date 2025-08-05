@@ -3,7 +3,7 @@
 //output : "csde"
 
 
-let str = "aabbaccad";
+let str = "abbaccad";
 let w = "";
 
 
