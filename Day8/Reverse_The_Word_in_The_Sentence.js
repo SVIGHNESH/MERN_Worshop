@@ -2,6 +2,5 @@
 // input -> Hello World
 //output -> World Hello 
 
-let str = "Hello World"
-str = str.split(" ").reverse().join(" ")
-console.log(str)
+let str = "Hello World" 
+console.log(str.split(" ").reverse().join(" "))
