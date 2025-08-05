@@ -73,3 +73,6 @@ for(let i of str){
     }
 }
 console.log(result)
+
+
+
