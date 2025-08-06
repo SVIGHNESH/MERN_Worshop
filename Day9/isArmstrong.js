@@ -7,6 +7,8 @@ const isArmStrong = (n)=>{
         sum += digit ** String(n).length;
         temp = Math.floor(temp / 10);
     }
+    console.log(sum,n);
+    
     return sum === n;
 }
-isArmStrong(153)
+console.log(isArmStrong(153));
