@@ -13,3 +13,4 @@ const addition = () => {
     return 2+2
 }
 console.log(addition())
+console.log(2 + addition())
