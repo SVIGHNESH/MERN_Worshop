@@ -20,3 +20,4 @@ const isHarshad = (a) => {
 }
 
 console.log(isHarshad(num))
+
