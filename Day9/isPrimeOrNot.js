@@ -4,7 +4,7 @@ const isPrime = (n) => {
         {
              return false;
         }
-    for (let i = 2; i < Math.sqrt(n); i++) {
+    for (let i = 2; i < n; i++) {
         if (n % i === 0)
             {
                 return false;
@@ -13,4 +13,4 @@ const isPrime = (n) => {
     return true;
 }
 
-
+console.log(isPrime(5))
