@@ -18,13 +18,12 @@
 // number = 1234 
 // output = 1+2+3+4
 
-let number = 1234
+let number = 12345
 let sum = 0;
-let temp = 0 ;
+
 while(number >0){
-    temp = number % 10 
+    let temp = number % 10  ;
     sum += temp;
-    temp = 0
     number = Math.floor(number/10)
 }
 //this is from the branch 1 
