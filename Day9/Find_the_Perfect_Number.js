@@ -1,9 +1,7 @@
 // Perfect number is a number that is equal to the sum of its proper divisors (excluding itself).
 // Example: 6 
 const isPerfectNumber = (n) => {
-    if (n <= 0) {
-        return false;
-    }
+   
     let sum = 0;
     for (let i = 1; i <= n / 2; i++) {
         if (n % i === 0) {
