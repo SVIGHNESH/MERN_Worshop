@@ -12,13 +12,13 @@ const findFactorial = (n) => {
 }
 
 const isStrong = (number)=>{
-    let temp = number;
+
     let sum = 0;
     let originalNumber = number;
     
     while(number > 0){
-        temp = number % 10;
-        sum += findFactorial(temp);
+      
+        sum += findFactorial(number % 10);
         number = Math.floor(number / 10);
     }
     return sum === originalNumber;
