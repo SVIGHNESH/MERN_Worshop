@@ -9,7 +9,19 @@
 // console.log(hi())
 
 
-const addition = (a,b=5) => {
-    return a+b
+// const addition = (a,b=5) => {
+//     return a+b
+// }
+// console.log(addition(3,6))
+
+
+
+//global variable
+const hii = "hlo"
+const print = ()=>{
+    const local = "im local variable"
+    console.log(hii);
+    console.log(local)
 }
-console.log(addition(3,6))
+print()
+// console.log(local)
