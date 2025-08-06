@@ -14,4 +14,4 @@ function sumTillLastDigit(num) {
     }
     return num;
 }
-console.log(sumTillLastDigit(5456)); 
+console.log(sumTillLastDigit(545)); 
