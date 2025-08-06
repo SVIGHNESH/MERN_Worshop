@@ -27,5 +27,5 @@ while(number >0){
     temp = 0
     number = Math.floor(number/10)
 }
-
+//this is from the branch 1 
 console.log(sum )
