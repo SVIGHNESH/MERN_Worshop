@@ -9,8 +9,7 @@
 // console.log(hi())
 
 
-const addition = () => {
-    return 2+2
+const addition = (a,b=5) => {
+    return a+b
 }
-console.log(addition())
-console.log(2 + addition())
+console.log(addition(3,6))
