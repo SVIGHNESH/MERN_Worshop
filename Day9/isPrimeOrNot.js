@@ -13,6 +13,18 @@ const isPrime = (n) => {
     return true;
 }
 
+const prime = (number) => {
+    for(i=2; i < (number/2)+1;i++){
+        if(number%i == 0){
+            return "It is a Prime Number"
+        }
+        else{
+            return "It is not a Prime NUmber"
+        }
+    }
+}
+console.log(prime(9))
+
 // console.log(isPrime(5))
 // console.log(isPrime(2))
 // console.log(isPrime(3))
@@ -20,7 +32,7 @@ const isPrime = (n) => {
 // console.log(isPrime(6))
 // console.log(isPrime(7))
 // console.log(isPrime(8))
-console.log(isPrime(9))
+// console.log(isPrime(9))
 
 
 
