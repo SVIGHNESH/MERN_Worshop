@@ -10,13 +10,13 @@
 
 
 let num = 1234
-const isHarshad = (a)=>{
+const isHarshad = (a) => {
     let sum = 0
-    while(a > 0){
-     sum += a%10;
-     a = Math.floor(a/10)
- }
- return sum%num == 0 ? "It is a harshad number" : "It is not a harshad number "
+    while (a > 0) {
+        sum += a % 10;
+        a = Math.floor(a / 10)
+    }
+    return sum % num == 0 ? "It is a harshad number" : "It is not a harshad number "
 }
 
 console.log(isHarshad(num))
