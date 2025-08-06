@@ -3,7 +3,7 @@ const Primenums = (n) => {
    
     let count = 0;
     let num = 2;
-    let primes = [];
+    
     while (count < n) {     
         let isPrime = true;
         for (let i = 2; i <= (num / 2) + 1 ; i++) {
@@ -13,12 +13,12 @@ const Primenums = (n) => {
             }
         }
         if (isPrime) {
-            primes.push(num);
+           console.log(num)
             count++;
         }
         num++;
     }
-    return primes;
+    
 }
 
-console.log(Primenums(10))
+Primenums(10)
