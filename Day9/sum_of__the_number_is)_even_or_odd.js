@@ -29,4 +29,4 @@ const sumEvenOdd = (n) => {
    console.log(evenSum)
    console.log(oddSum)
 }
-sumEvenOdd(123456768) // Output: { evenSum: 20, oddSum: 16 }
+sumEvenOdd(123456768) 
