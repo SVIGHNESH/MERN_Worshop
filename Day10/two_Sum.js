@@ -19,6 +19,11 @@ let result = [];
 
 
 
+
+
+
+
+
 const twoSum =(list,sum)=>{
     for(let i = 0 ; i< list.length;i++){
         for(let j = i+1; j < list.length;j++){
