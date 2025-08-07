@@ -1,5 +1,5 @@
 // Arrays 
-let number = [10,5,3,4,6]
+let number = [10,5,3,40,6]
 // number.forEach((element,index) => {
 //     console.log()
 // });
@@ -23,4 +23,12 @@ let number = [10,5,3,4,6]
 // console.log(number.every((n)=> n>0));
 
 // filter 
-console.log(number.filter((n)=> n%2==0))
+// console.log(number.filter((n)=> n%2==0))
+
+// find
+// console.log(number.find((n)=>n > 10));
+
+//findIndex
+
+// console.log(number.findIndex((n)=> n > 10));
+
