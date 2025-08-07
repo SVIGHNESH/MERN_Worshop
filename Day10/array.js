@@ -39,6 +39,14 @@ let numbers = [1,3,5,7,9]
 // console.log(numbers);
 
 
-// unshift
-numbers.unshift(34)
-console.log(numbers);
+// // unshift
+// numbers.unshift(34)
+// console.log(numbers);
+
+
+//splice
+
+let content = [ "hello","hi","world"]
+let changed_Content = content.splice(1,1,"bye")
+console.log(changed_Content);
+console.log(content);
