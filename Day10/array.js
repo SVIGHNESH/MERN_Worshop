@@ -44,9 +44,18 @@ let numbers = [1,3,5,7,9]
 // console.log(numbers);
 
 
-//splice
+//splice 3 para; (startIndex , DeleteCount,"String")
 
-let content = [ "hello","hi","world"]
-let changed_Content = content.splice(1,1,"bye")
-console.log(changed_Content);
-console.log(content);
+// let content = [ "hello","hi","world"]
+// let changed_Content = content.splice(1,1,"bye")
+// console.log(changed_Content);
+// console.log(content);
+// content.splice(1,"Hit")
+// console.log(content);
+
+
+//concat
+
+let arr1 =[2,3,4,23,2]
+let arr2 = [4,3,5,2,5,3]
+console.log(arr1.concat(arr2));
