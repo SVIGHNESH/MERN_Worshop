@@ -1,5 +1,5 @@
 // Arrays 
-let number = [10,2,2,4,6]
+let number = [10,5,3,4,6]
 // number.forEach((element,index) => {
 //     console.log()
 // });
@@ -19,3 +19,8 @@ let number = [10,2,2,4,6]
 
 
 //every
+
+// console.log(number.every((n)=> n>0));
+
+// filter 
+console.log(number.filter((n)=> n%2==0))
