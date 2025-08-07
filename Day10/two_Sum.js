@@ -11,8 +11,22 @@ numbers.forEach((element, index) => {
     }
 });
 if (result.length > 0) { 
-    console.log(`Two numbers that add up to ${target} are: ${result.indexOf(result[0])} and ${result.indexOf(result[1])}`);
+    console.log(`Two numbers that add up to ${target} are: ${(result[0])} and ${(result[1])}`);
 }
 else {
     console.log(`No two numbers add up to ${target}`);
 }   
+
+
+
+const twoSum =(list,sum)=>{
+    for(let i = 0 ; i< list.length;i++){
+        for(let j = i+1; j < list.length;j++){
+            if(list[i]  + list[j] == sum){
+                return {i,j}
+            }
+        }
+    }
+    return []
+}
+console.log(twoSum(numbers,target));
