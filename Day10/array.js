@@ -4,5 +4,5 @@ let number = [1,2,3,4,5]
 //     console.log()
 // });
 
-let changed = number.map((num)=> num*num)
+let changed = number.map((num)=> num)
 console.log(changed)
