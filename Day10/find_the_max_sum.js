@@ -10,7 +10,7 @@ function findMaxSum(numbers){
     for (let i = 0; i < numbers.length; i++) {
     for (let j = i + 1; j < numbers.length; j++) {
         if (numbers[i] !== undefined && numbers[j] !== undefined) {
-            let sum = numbers[i] + numbers[j];
+            let sum = numbers[i] +  numbers[j];
             if (sum > maxSum) {
                 maxSum = sum;
             }
