@@ -4,11 +4,11 @@
 function rightRotateByOne(arr) {
     if (arr.length === 0) return arr;
     let last = arr.pop();
-    arr.unshift();
+    arr.unshift(last);
     return arr;
 }
 
-// Example usage:
+
 let arr = [1, 2, 3, 4];
 rightRotateByOne(arr);
-console.log(arr); // Output: [4, 1, 2, 3]
+console.log(arr); 
