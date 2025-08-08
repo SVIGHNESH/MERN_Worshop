@@ -56,7 +56,7 @@ for(let keys in data){
         }
         else{
             inverted_data[value] = [inverted_data[value], keys]
-                
+        }
     }
     else{
         inverted_data[value] = keys
@@ -64,6 +64,4 @@ for(let keys in data){
 }
 
 console.log(inverted_data)
-
-
 
