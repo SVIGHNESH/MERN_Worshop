@@ -15,7 +15,7 @@ function groupWordsByFirstLetter(words) {
     return groupedWords;
 }
 
-const words = ["apple", "banana", "apricot", "ball", "Avocado"];
+const words = ["apple", "banana", "ask", "ball", "bolt"];
 const groupedResult = groupWordsByFirstLetter(words);
 
 console.log(groupedResult);
