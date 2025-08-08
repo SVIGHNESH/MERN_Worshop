@@ -4,7 +4,6 @@ function groupWordsByFirstLetter(words) {
 
     for (const word of words) {
         const firstLetter = word.charAt(0);
-
         if (groupedWords[firstLetter]) {
             groupedWords[firstLetter].push(word);
         } else {
