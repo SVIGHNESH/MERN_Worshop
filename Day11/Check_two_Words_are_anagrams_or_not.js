@@ -4,7 +4,7 @@
 const first = "listen";
 const second = "silent";
 
-if (first.length !== second.length) {
+if(first.length !== second.length) {
     console.log("Not A Anagram.")
 }
 
