@@ -37,7 +37,7 @@ for(let i = 0 ; i< numbers.length;i++){
         data[numbers[i]] = 1 ;
     }
 }
-// console.log(data);
+console.log(data);
 //for the first non repeating charachters 
 
 for(let keys in data){
@@ -49,7 +49,21 @@ for(let keys in data){
 //invert the objetct (reverse the keys and the value )
 let inverted_data = {}
 for(let keys in data){
-    inverted_data[data[keys]] = keys
+    let value = data[keys];
+    if(inverted_data[value]){
+        if(Array.isArray(inverted_data[value])){
+            inverted_data[value].push(keys)
+        }
+        else{
+            inverted_data[value] = [inverted_data[value], keys]
+                
+    }
+    else{
+        inverted_data[value] = keys
+    }
 }
 
 console.log(inverted_data)
+
+
+
