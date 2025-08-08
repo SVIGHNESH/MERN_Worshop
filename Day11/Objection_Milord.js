@@ -30,6 +30,6 @@ for(let key in  objj){
     console.log(objj[key]);
 }
 
-//printing the keys in the list 
+//printing the keys and the values in the list 
 console.log(Object.keys(objj))
 console.log(Object.values(objj))
