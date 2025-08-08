@@ -45,3 +45,11 @@ for(let keys in data){
         console.log(keys);
     }
 }
+
+//invert the objetct (reverse the keys and the value )
+let inverted_data = {}
+for(let keys in data){
+    inverted_data[data[keys]] = keys
+}
+
+console.log(inverted_data)
