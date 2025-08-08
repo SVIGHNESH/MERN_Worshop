@@ -24,4 +24,4 @@ for (let i = 0; i < word2.length; i++) {
     charCount[char]--;
 }
 
-console.log("True")
+console.log("They are the anagrams")
