@@ -15,5 +15,3 @@
 //     "marks.science" : 40,
 //     "roll_no" : 22
 // }
-
-
