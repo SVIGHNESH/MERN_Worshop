@@ -47,21 +47,27 @@ for(let keys in data){
 }
 
 //invert the objetct (reverse the keys and the value )
-let inverted_data = {}
-for(let keys in data){
-    let value = data[keys];
-    if(inverted_data[value]){
-        if(Array.isArray(inverted_data[value])){
-            inverted_data[value].push(keys)
-        }
-        else{
-            inverted_data[value] = [inverted_data[value], keys]
-        }
-    }
-    else{
-        inverted_data[value] = keys
-    }
+// let inverted_data = {}
+// for(let keys in data){
+//     let value = data[keys];
+//     if(inverted_data[value]){
+//         if(Array.isArray(inverted_data[value])){
+//             inverted_data[value].push(keys)
+//         }
+//         else{
+//             inverted_data[value] = [inverted_data[value], keys]
+//         }
+//     }
+//     else{
+//         inverted_data[value] = keys
+//     }
+// }
+
+// console.log(inverted_data)
+
+let reverse ={}
+for(let key in data){
+    reverse[data[key]] = key
+
 }
-
-console.log(inverted_data)
-
+console.log(reverse);
