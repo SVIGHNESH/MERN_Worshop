@@ -14,7 +14,7 @@ const charCount = {};
 for (let i = 0; i < first.length; i++) {
     const char = first[i];
     charCount[char] = (charCount[char] || 0) + 1;
-}
+}           
 
 for (let i = 0; i < second.length; i++) {
     const char = second[i];
