@@ -7,17 +7,17 @@
 //}
 
 
-function groupWordByLength(words){
+function groupWordByLength(words) {
     let groupedWords = {};
-    for(let word of words){
+    for (let word of words) {
         let len = word.length;
-        if(groupedWords[len]){
-             groupedWords[len].push(word)
-         }else{
-             groupedWords[len] = [word]
-         }
+        if (groupedWords[len]) {
+            groupedWords[len].push(word)
+        } else {
+            groupedWords[len] = [word]
         }
-        return groupedWords;
     }
+    return groupedWords;
+}
 
-    console.log(groupWordByLength(["apple","ball","cat","dog"]))
+console.log(groupWordByLength(["apple", "ball", "cat", "dog"]))
