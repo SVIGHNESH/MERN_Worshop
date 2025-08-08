@@ -1,4 +1,7 @@
+//flatten object
+
 // let obj = {name:"Paveen",
+
             //     marks:{
             //         "maths":39,
             //         "science":40
