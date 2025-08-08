@@ -21,3 +21,6 @@ function groupWordByLength(words) {
 }
 
 console.log(groupWordByLength(["apple", "ball", "cat", "dog"]))
+
+
+
