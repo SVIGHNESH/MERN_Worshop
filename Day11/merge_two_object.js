@@ -23,5 +23,5 @@ for(let key in data1){
 for(let key in data2){
     result[key] = (result[key] && result[key]+data2[key]) || data2[key]
 
-}
+}-
 console.log(result);
