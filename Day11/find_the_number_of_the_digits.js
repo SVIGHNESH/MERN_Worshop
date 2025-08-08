@@ -37,4 +37,11 @@ for(let i = 0 ; i< numbers.length;i++){
         data[numbers[i]] = 1 ;
     }
 }
-console.log(data);
+// console.log(data);
+//for the first non repeating charachters 
+
+for(let keys in data){
+    if(data[keys] == 1 ){
+        console.log(keys);
+    }
+}
