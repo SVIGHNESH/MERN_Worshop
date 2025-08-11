@@ -6,8 +6,8 @@ function isKaprekar(n) {
     if (n < 0) return false;
     if (n <= 1) return true;
 
-    const sq_n = n * n;
-    const numStr = sq_n.toString();
+    const sq = n * n;
+    const numStr = sq.toString();
     const len = numStr.length;
 
     for (let i = 1; i < len; i++) {
