@@ -1,4 +1,4 @@
-console.log(leadersOptimized([16, 17, 4, 3, 5, 2]));
+
 
 //(rearrangeAlternate([1, 3, -4, 5, -6, -2]));
 function rearrangeAlternate(arr) {
@@ -30,3 +30,4 @@ function rearrangeAlternate(arr) {
 
     return result;
 }
+console.log(rearrangeAlternate([2,1,3,-3,1,-2,1,-4,2,-4]));
