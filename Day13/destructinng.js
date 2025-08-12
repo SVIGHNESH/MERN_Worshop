@@ -31,3 +31,7 @@ const fun = (...ages)=>{
     console.log(ages)
 }
 fun({"age":45,"name":"VIghneh"})
+
+
+
+//Spread ... Operator 
