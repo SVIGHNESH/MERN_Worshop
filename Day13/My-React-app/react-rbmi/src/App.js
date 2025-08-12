@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './Hello.js'
 
 function App() {
+  const hi = false
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {hi ? <h1>Hi is True</h1> : <h1>Hi is False</h1>}
+      
+  
     </div>
+  
   );
 }
 
