@@ -70,5 +70,11 @@ fun({"age":45,"name":"VIghneh"})
 // const gunctionName = (a,b,c,d)=>{
 //     console.log(hi)
 // }
-// const ar = [1,4,5,6]
+//const ar = [1,4,5,6]
 // gunctionName(...arr)
+
+const gunctionName = (...obj)=>{
+     console.log(obj)
+ }
+ const ar = [1,4,5,6]
+gunctionName(ar)
