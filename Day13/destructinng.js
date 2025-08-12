@@ -48,5 +48,9 @@ console.log(copy)
 
 const arr1 =[{1:"one",2:"two",3:"three"},{3:"three",4:"four"}]
 
-const co = 
+const co = [...arr1]
+
+co[0]["1"] = "changed"
+console.log(co[0]["1"])
+console.log(arr1);
 
