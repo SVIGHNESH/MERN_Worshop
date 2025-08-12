@@ -54,3 +54,7 @@ co[0]["1"] = "changed"
 console.log(co[0]["1"])
 console.log(arr1);
 
+
+
+// Stucture
+
