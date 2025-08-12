@@ -1,2 +1,3 @@
-import {add} from './Maths.js'
-console.log(add(3,3));
+// import {add,apple} from './Maths.js'
+import apple from './Maths.js'
+console.log(apple("dfghjk"));
