@@ -2,7 +2,7 @@ export const add = (a, b) => {
     return a + b;
 }
 
-export const apple = (a)=>
+const apple = (a)=>
 {
     return `${a} , Hello`;
 }
