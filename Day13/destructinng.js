@@ -46,5 +46,5 @@ copy[0] = 9
 console.log(arr)
 console.log(copy)
 
-
+const arr1 =[{1:"one",2:"two",3:"three"},{3:"three",4:"four"}]
 
