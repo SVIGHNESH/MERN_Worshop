@@ -15,7 +15,7 @@
 //     let b = 6;
 //     console.log(`a value is the ${a}`);
 //     console.log(`b value is the ${b}`);
-const fun = (string,{...value})={
+const fun = (string,{...value})=>{
     console.log(string);
     console.log(value);
 
