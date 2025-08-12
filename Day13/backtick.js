@@ -23,4 +23,4 @@ const fun = (string,{...value})=>{
 
 let hi = "gi hello"
 let num  = 123
-`${fun(hi,{num})}`
+console.log(`${fun(hi,{num})}`);
