@@ -39,3 +39,10 @@ fun({"age":45,"name":"VIghneh"})
 const arr = [3,24,22,3]
 const newArr = [...arr]
 console.log(newArr);
+
+
+const copy = arr
+copy[0] = 9
+console.log(arr)
+console.log(copy)
+
