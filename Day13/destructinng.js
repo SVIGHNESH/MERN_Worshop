@@ -35,3 +35,7 @@ fun({"age":45,"name":"VIghneh"})
 
 
 //Spread ... Operator 
+
+const arr = [3,24,22,3]
+const newArr = [...arr]
+console.log(newArr);
