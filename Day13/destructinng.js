@@ -46,15 +46,22 @@ copy[0] = 9
 console.log(arr)
 console.log(copy)
 
-const arr1 =[{1:"one",2:"two",3:"three"},{3:"three",4:"four"}]
+const arr4 =[{1:"one",2:"two",3:"three"},{3:"three",4:"four"}]
 
-const co = [...arr1]
+const co = [...arr4]
 
-co[0]["1"] = "changed"
-console.log(co[0]["1"])
-console.log(arr1);
+
 
 
 
 // Stucture
+
+
+const arr1 = [{"1":"one","2":"two"},
+                {"3":"three","4":"Four"}]
+const cop = JSON.parse(JSON.stringify(arr1))
+
+cop[0]["1"] = "changed"
+console.log(cop[0]["1"])
+console.log(arr4);
 
