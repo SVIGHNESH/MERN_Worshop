@@ -3,8 +3,9 @@ function Footer(){
     return(
         <div className='FooterSection'>
             <div className='firstPartOfFooterSection'>
-                <p>Follow Us</p>
+                
                 <div>
+                    <p>Follow Us</p>
                     <a href="https://linkedin.com"> linkedin</a>
                     <a href="https://instagram.com"> Instagram</a>
                     <a href="https://x.com"> X</a>

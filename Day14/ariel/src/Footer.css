@@ -1,5 +1,36 @@
 .FooterSection{
     margin: 30px;
     align-items: center;
+   
+}
+
+.firstPartOfFooterSection{
+    margin: 100px;
+    
+    margin-bottom: 0px;
+    padding-left: 600px;
     
 }
+.firstPartOfFooterSection p {
+    margin: 30px;
+    padding-left: 118px;
+}
+.firstPartOfFooterSection a {
+    margin: 30px;
+}
+
+
+
+.secondPartOfFooterSection{
+    display:  flex;
+    margin: 100px;
+    margin-top: 40px;
+    justify-content: center;
+    
+}
+
+.secondPartOfFooterSection div{
+    padding:30px
+    
+}
+
