@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello.js'
+import Navbar from './Navbar.jsx'
 
 function App() {
   const hi = true
@@ -14,6 +15,8 @@ function App() {
   }
   return (
     <div className="App">
+
+      <Navbar/>
 
       <h1  style={styles}>Hi is True</h1>
       <h1 style = {{"color" : "red"}}>Hi is False</h1>
