@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar.jsx';
 import Main from './Main.jsx';
 import Footer from './Footer.jsx'
+import DynamicData from './DynamicData.jsx';
 function App() {
   let data = "hello";
   let data1 = "hiii";
@@ -10,11 +11,17 @@ function App() {
 
   return(
     <div>
-      <Navbar />
+      {/* <Navbar />
       <br/>
       <Main  main ={data} name2 ={data1} name3 = {data2}/> 
-      <Footer /> 
+      <Footer />  */}
+
+      <DynamicData/>
     </div>
   );
 }
 export default App;
+
+
+
+//Dynamic Data 
