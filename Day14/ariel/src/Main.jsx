@@ -1,7 +1,11 @@
 import './Main.css'
-function Main(){
-    return(
+function Main({ name, name1, name2 }) {
+    return (
+
         <div className='MainSection'>
+            <div>{name}</div>
+            <div>{name1}</div>
+            <div>{name2}</div>
             <div className='partOneOfMainSection'>
                 <h2 >Laundry 101 - the Perfect Guide on How to do laundry</h2>
 

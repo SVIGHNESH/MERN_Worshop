@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './Navbar.jsx';
 import Main from './Main.jsx';
 import Footer from './Footer.jsx'
 function App() {
+  let data = "hello";
+  let data1 = "hiii";
+  let data2 = "hiii";
+
   return(
     <div>
-      <Navbar/>
+      <Navbar />
       <br/>
-      <Main /> 
+      <Main  main ={data} name2 ={data1} name3 = {data2}/> 
       <Footer /> 
     </div>
   );
