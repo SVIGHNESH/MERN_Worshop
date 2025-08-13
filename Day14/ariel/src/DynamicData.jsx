@@ -22,6 +22,11 @@ function DynamicData() {
             [name]:value
         })
     }
+
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        email.trim() ? alert("email entered") : alert("Plz Enter Valid Email")
+       }
     return (
         <>
             {/* <h1>{data1}</h1> */}
@@ -37,6 +42,7 @@ function DynamicData() {
             }}>logout</button> * */}
 
 
+        
 
             {/* {Object.keys(obj).map((element) => {
                     // return <li key={obj["id"]}>{obj[element]}</li>
@@ -54,9 +60,10 @@ function DynamicData() {
 
 
 
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <input type="email" placeholder="email"  name = "email" required value={email} onChange={handlechange} />
                 <input type="password" placeholder="password" name ="password" required value={password} onChange={handlechange} />
+                <input type="submit"/>
 
 
             </form>
