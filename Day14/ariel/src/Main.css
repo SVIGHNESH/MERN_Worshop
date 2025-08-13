@@ -1,0 +1,14 @@
+.MainSection{
+    display: flex;
+}
+.partOneOfMainSection{
+    height: 408px;
+    /* background-color: pink; */
+    align-content: center;
+}
+.partOneOfMainSection p{
+    margin-top: 30px;
+}
+.partOneOfMainSection h2{
+        color:aqua;
+}
