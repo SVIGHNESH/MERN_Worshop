@@ -25,8 +25,19 @@ function DynamicData() {
 
     const handleSubmit =(e)=>{
         e.preventDefault();
-        email.trim() ? alert("email entered") : alert("Plz Enter Valid Email")
+        // email.trim() ? alert("email entered") : alert("Plter Valid Email")
+        if (!email.trim()) {
+            alert("Plz Enter Valid Email");
+            return;
+        }
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long");
+            return;
+        }
+        alert("email and password entered");
        }
+
+       
     return (
         <>
             {/* <h1>{data1}</h1> */}
