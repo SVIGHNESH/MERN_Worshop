@@ -8,7 +8,16 @@
 }
 .partOneOfMainSection p{
     margin-top: 30px;
+    font-size: large;
+}
+.partOneOfMainSection h2{
+    margin-top: 30px;
+    font-size:xx-large;
 }
 .partOneOfMainSection h2{
         color:aqua;
+}
+.secondPartOfMainSection img {
+    border-radius: 30px;
+    padding-right: 10px;
 }
