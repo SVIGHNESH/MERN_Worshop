@@ -1,5 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import Table from './Table.jsx'
 
 function App() {
   // let [inc, setInc] = useState(0)
@@ -93,7 +94,7 @@ function App() {
 
 
     setUsers([...users,user])
-
+    console.log(users);
    
   }
 
@@ -141,6 +142,7 @@ function App() {
 
         <input type='submit' />
       </form>
+      <Table users = {users}/>
     </>
   );
 }
