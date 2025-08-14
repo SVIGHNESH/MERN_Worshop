@@ -10,7 +10,7 @@ function App() {
   // const{email,name} = data;
 
   // let [d2, setD2] = useState("Normal")
- // console.log(email);
+  // console.log(email);
   // const decreasing = () => {
 
   // setData(data-1)
@@ -71,15 +71,15 @@ function App() {
 
 
 
-const inputChange =(e)=>{
-  const {name,value} = e.target
-  setData({...data,[name]:value})
-}
+  const inputChange = (e) => {
+    const { name, value } = e.target
+    setData({ ...data, [name]: value })
+  }
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert([ data.email,data.name])
+    alert([data.email, data.name])
   }
 
   return (
@@ -122,7 +122,7 @@ const inputChange =(e)=>{
           onChange={inputChange}
         />
 
-         <input type='submit'/>
+        <input type='submit' />
       </form>
     </>
   );
