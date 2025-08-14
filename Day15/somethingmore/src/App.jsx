@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import Table from './Table.jsx'
+import Pagination from './Pagination.jsx'
 
 function App() {
   // let [inc, setInc] = useState(0)
@@ -143,6 +144,7 @@ function App() {
         <input type='submit' />
       </form>
       <Table users = {users}/>
+     
     </>
   );
 }

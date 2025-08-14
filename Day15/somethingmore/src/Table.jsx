@@ -1,4 +1,13 @@
+import { useState } from "react";
+import Pagination from "./Pagination";
 function Table({users}) {
+
+    const[p_data,setP_data] = useState([])
+    const send_data = (data)=>{
+        setP_data(data)
+        console.log(p_data);
+    }
+
     const styles = {
         "border":"solid 1px black"
     }
@@ -22,7 +31,11 @@ function Table({users}) {
                         
                 </tbody>
             </table>
+
+            {/* <Pagination user = {users}  send={send_data}/> */}
         </div>
+
+
     );
 }
 export default Table
