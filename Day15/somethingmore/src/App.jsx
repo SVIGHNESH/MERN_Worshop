@@ -1,9 +1,13 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   // let [inc, setInc] = useState(0)
   // let [dec, setDec] = useState(0)
+
+
+
+  let [users,setUsers] = useState([])
   let [data, setData] = useState({ "email": "", "name": "" })
   // let [email, setEmail] = useState("")
   // let [name, setName] = useState("")
@@ -79,8 +83,21 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert([data.email, data.name])
+    // alert([data.email, data.name])
+    let user = {
+      id:Date.now(),
+      name : data.name,
+      email : data.email,
+
+    }
+
+
+    setUsers([...users,user])
+
+   
   }
+
+  
 
   return (
     <>
