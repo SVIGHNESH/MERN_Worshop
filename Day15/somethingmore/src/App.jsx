@@ -6,13 +6,33 @@ function App() {
   let[data,setData]=useState(0)
   const decreasing = ()=>{
     
-    setData(data-1)
+    // setData(data-1)
     
+    // setData(data-1)
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
+    setData((prev => prev -1 ))
     
   }
   const increasing = ()=>{
     
-    setData(data+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
+    setData((next)=>next+1)
     
     
   }
@@ -22,8 +42,8 @@ function App() {
       <div>{data}</div>
       <br />
       <br />
-      <button onClick = {decreasing}>Decrease by 1  </button>
-      <button onClick = {increasing}>Increase by 1  </button>
+      <button onClick = {decreasing}>Decrease by 10  </button>
+      <button onClick = {increasing}>Increase by 10  </button>
 
     </>
   );
