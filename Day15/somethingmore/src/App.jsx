@@ -122,7 +122,7 @@ const inputChange =(e)=>{
           onChange={inputChange}
         />
 
-         <input type='submit' /> 
+         <input type='submit'/>
       </form>
     </>
   );
