@@ -22,7 +22,7 @@ function App() {
     // setData((prev => prev - 1))
     // setDec((prev)=>prev -1)
     // setData(`Decrease by ${dec - 1 }`)
-    setDec(dec - 1)
+     setDec(dec - 1)
     setData(`Decrease by ${dec-1}`)
   }
   const increasing = () => {
@@ -39,7 +39,7 @@ function App() {
 
       //  setData(`Increse  by ${inc  + 1 }`)
     setInc(inc + 1)
-    setData(`Increase by ${inc + 1}`)
+    setData(`Increase by ${inc+1 }`)
 
 
   }
