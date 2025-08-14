@@ -4,13 +4,13 @@ import { useState } from 'react';
 function App() {
   // let [inc, setInc] = useState(0)
   // let [dec, setDec] = useState(0)
-  let [d1, setD1] = useState({ "email": "gjkhgkj", "name": "jhfjg" })
-  let [email, setEmail] = useState("")
-  let [name, setName] = useState("")
+  let [data, setData] = useState({ "email": "", "name": "" })
+  // let [email, setEmail] = useState("")
+  // let [name, setName] = useState("")
   // const{email,name} = data;
 
   // let [d2, setD2] = useState("Normal")
-  console.log(email);
+ // console.log(email);
   // const decreasing = () => {
 
   // setData(data-1)
@@ -56,22 +56,30 @@ function App() {
   // }
 
 
-  const emailChange = (e) => {
-    // const {email,name} = e.target
-    // setData({...data,
-    //         [email]:value
-    //     })
+  // const emailChange = (e) => {
+  //   // const {email,name} = e.target
+  //   // setData({...data,
+  //   //         [email]:value
+  //   //     })
 
-    setEmail(e.target.value)
+  //   setEmail(e.target.value)
 
-  }
-  const nameChange = (e) => {
-    setName(e.target.value)
-  } 
+  // }
+  // const nameChange = (e) => {
+  //   setName(e.target.value)
+  // } 
+
+
+
+const inputChange =(e)=>{
+  const {name,value} = e.target
+  setData({...data,[name]:value})
+}
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert([name, email])
+    alert([ data.email,data.name])
   }
 
   return (
@@ -101,16 +109,20 @@ function App() {
 
       <form onSubmit={handleSubmit}>
         <input type="email"
-          value={email}
-          onChange={emailChange}
+          placeholder='Enter your Email Here'
+          value={data.email}
+          name='email'
+          onChange={inputChange}
         />
 
         <input type="text"
-          value={name}
-          onChange={nameChange}
+          name='name'
+          placeholder='Enter your Name Here'
+          value={data.name}
+          onChange={inputChange}
         />
 
-        <input type='submit' />
+         <input type='submit' /> 
       </form>
     </>
   );
