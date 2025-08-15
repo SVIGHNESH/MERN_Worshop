@@ -35,7 +35,6 @@ function Table({users}) {
             {/* <Pagination user = {users}  send={send_data}/> */}
         </div>
 
-
     );
 }
 export default Table
