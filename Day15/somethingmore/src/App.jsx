@@ -93,6 +93,10 @@ function App() {
 
     }
 
+    //  useEffect(()=>{
+    //     console.log(p_data);
+    // },[])
+
 
     setUsers([...users,user])
     console.log(users);
