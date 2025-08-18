@@ -35,7 +35,7 @@ import { useEffect, useState } from "react";
     send_data({"rows_per_page":rows_per_page,"page":page,"l_row":l_row,"f_row":f_row,"users_data":users_data,"numb_of_page":num_of_pages})
   
     },[users,page])
-
+ 
     const decrease =()=>{
                 // if(page > 1 ){
                 //     Setpage(page - 1 )
