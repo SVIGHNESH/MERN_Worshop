@@ -37,25 +37,28 @@ import { useEffect, useState } from "react";
     },[users])
 
     const decrease =()=>{
-                if(page > 1 ){
-                    Setpage(page - 1 )
-                }
+                // if(page > 1 ){
+                //     Setpage(page - 1 )
+                // }
 
-                page === 1 ? Setpage(1):Setpage(prev =>prev -1 )
+                page == 1 ? Setpage(1) : Setpage(prev => prev - 1)
+    }
+    const increase = ()=>{
+          page === page_number ? Setpage(page_number) : Setpage(prev => prev + 1)
     }
 
-    const increase = () => {
-        if (page < page_number) {
-            Setpage(page + 1);
-        }
-    };
 
     return(
       <div>
-        <button onClick={decrease}>
+        <button onClick={()=>{}}>
                 Prev
         </button>
-        <button onClick={increase}>
+        {Array.from({length: page_number}, (_, i) => (
+          <button key={i} onClick={() => Setpage(i + 1)}>
+            {i + 1}
+          </button>
+        ))}
+        <button>
             Next
         </button>
 
