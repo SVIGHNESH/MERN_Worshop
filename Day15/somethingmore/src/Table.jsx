@@ -17,7 +17,8 @@ function Table({ users }) {
     // }
 
     const styles = {
-        "border": "solid 1px black"
+       "border": "solid 1px black",
+       "gridLines": "solid 1px black"
     }
     
 
@@ -29,9 +30,9 @@ function Table({ users }) {
         <div>
             <>
                 {p_data["users_data"] && (
-                    <table style={styles}>
+                    <table border={1} style={styles}>
                         <thead>
-                            <tr>
+                            <tr style={styles}>
                                 <th>id</th>
                                 <th>Email</th>
                                 <th>Name</th>
@@ -39,7 +40,7 @@ function Table({ users }) {
                         </thead>
                         <tbody>
                             {p_data["users_data"].map((user) => (
-                                <tr key={user.id}>
+                                <tr style={styles} key={user.id}>
                                     <td>{user.id}</td>
                                     <td>{user.email}</td>
                                     <td>{user.name}</td>

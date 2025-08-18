@@ -34,19 +34,24 @@ import { useEffect, useState } from "react";
     useEffect(()=>{
     send_data({"rows_per_page":rows_per_page,"page":page,"l_row":l_row,"f_row":f_row,"users_data":users_data,"numb_of_page":num_of_pages})
   
-    },[users])
+    },[users,page])
 
     const decrease =()=>{
                 // if(page > 1 ){
                 //     Setpage(page - 1 )
                 // }
 
-                page == 1 ? Setpage(1) : Setpage(prev => prev - 1)
+                page === 1 ? Setpage(1) : Setpage(prev => prev - 1)
     }
     const increase = ()=>{
           page === num_of_pages ? Setpage(num_of_pages) : Setpage(prev => prev + 1)
     }
 
+
+      const move_to_page = (pageNumber) => {
+        Setpage(pageNumber);
+
+      };
     useEffect(()=>{
         setNum_of_pages(Math.ceil(len/rows_per_page));
     },[len,rows_per_page])
@@ -57,7 +62,7 @@ import { useEffect, useState } from "react";
                 Prev
         </button>
         {Array.from({length: num_of_pages}, (_, i) => (
-          <button key={i} onClick={() => Setpage(i + 1)}>
+          <button key={i} onClick={() => move_to_page(i + 1)}>
             {i + 1}
           </button>
         ))}
