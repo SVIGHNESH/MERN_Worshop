@@ -1,9 +1,9 @@
 import { useState ,useEffect, use} from "react";
 import Pagination from "./Pagination";
-function Table({ users }) {
+function Table({ users,setData }) {
 
     const [p_data, setP_data] = useState([])
-
+    const[user_data,setUser] = useState()
 
     const send_data =(data)=>{
         setP_data(data)
@@ -26,6 +26,18 @@ function Table({ users }) {
         setP_data({...p_data,["user_data"]:0})
 },[])
 
+
+    useEffect(()=>{
+        setData(user_data)
+    },[user_data])
+
+
+``//to edit the user 
+  const edit = (user_id)=>{
+    const user_data = users.find((user) => user.id === user_id )
+    
+  }
+
     return (
         <div>
             <>
@@ -36,6 +48,7 @@ function Table({ users }) {
                                 <th>id</th>
                                 <th>Email</th>
                                 <th>Name</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,6 +57,7 @@ function Table({ users }) {
                                     <td>{user.id}</td>
                                     <td>{user.email}</td>
                                     <td>{user.name}</td>
+                                    <td><button onClick={()=>edit(user.id)}>Edit</button></td>
                                 </tr>
                             ))}
                         </tbody>

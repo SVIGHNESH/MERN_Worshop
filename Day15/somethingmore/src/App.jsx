@@ -147,7 +147,7 @@ function App() {
 
         <input type='submit' />
       </form>
-      <Table users = {users}/>
+      <Table users = {users} setData =  {setData}/>
      
     </>
   );
