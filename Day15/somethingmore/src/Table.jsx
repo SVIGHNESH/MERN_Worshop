@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Pagination from "./Pagination";
-function Table({users}) {
+function Table({ users }) {
 
-    const[p_data,setP_data] = useState([])
-    const send_data = (data)=>{
+    const [p_data, setP_data] = useState([])
+    const send_data = (data) => {
         setP_data(data)
         console.log(p_data);
     }
 
     const styles = {
-        "border":"solid 1px black"
+        "border": "solid 1px black"
     }
     return (
         <div>
@@ -20,15 +20,15 @@ function Table({users}) {
                     <th>Name</th>
                 </thead>
                 <tbody>
-                    {users.map((user) =>(
+                    {users.map((user) => (
                         <tr key={user.id}>
                             <td>{user.id}</td>
                             <td>{user.email}</td>
                             <td>{user.name}</td>
                         </tr>
                     ))}
-                                      
-                        
+
+
                 </tbody>
             </table>
 
