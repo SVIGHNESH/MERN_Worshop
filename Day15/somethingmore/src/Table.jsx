@@ -1,4 +1,4 @@
-import { useState ,useEffect} from "react";
+import { useState ,useEffect, use} from "react";
 import Pagination from "./Pagination";
 function Table({ users }) {
 
@@ -19,30 +19,37 @@ function Table({ users }) {
     const styles = {
         "border": "solid 1px black"
     }
-    let hi = 0;
+    
+
+    useEffect(()=>{
+        setP_data({...p_data,["user_data"]:0})
+},[])
 
     return (
         <div>
-           <table style={styles}>
-                <thead>
-                    <th>id</th>
-                    <th>Email</th>
-                    <th>Name</th>
-                </thead>
-                <tbody>
-                    {p_data["users_data"].map((user) => (
-                        <tr key={user.id}>
-                            <td>{user.id}</td>
-                            <td>{user.email}</td>
-                            <td>{user.name}</td>
-                        </tr>
-                    ))}
-
-
-                </tbody>
-            </table>
-
-            <Pagination users={users}  send_data = {send_data} />
+            <>
+                {p_data["users_data"] && (
+                    <table style={styles}>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Email</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {p_data["users_data"].map((user) => (
+                                <tr key={user.id}>
+                                    <td>{user.id}</td>
+                                    <td>{user.email}</td>
+                                    <td>{user.name}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                )}
+                <Pagination users={users} send_data={send_data} />
+            </>
         </div>
 
     );

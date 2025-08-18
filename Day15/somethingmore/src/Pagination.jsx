@@ -44,13 +44,18 @@ import { useEffect, useState } from "react";
                 page === 1 ? Setpage(1):Setpage(prev =>prev -1 )
     }
 
+    const increase = () => {
+        if (page < page_number) {
+            Setpage(page + 1);
+        }
+    };
 
     return(
       <div>
-        <button onClick={()=>{}}>
+        <button onClick={decrease}>
                 Prev
         </button>
-        <button>
+        <button onClick={increase}>
             Next
         </button>
 
