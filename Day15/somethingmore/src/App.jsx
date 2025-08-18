@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import {useState,useEffect } from 'react';
 import Table from './Table.jsx'
 import Pagination from './Pagination.jsx'
 
@@ -9,8 +9,7 @@ function App() {
 
 
 
-  let [users,setUsers] = useState([])
-  let [data, setData] = useState({ "email": "", "name": "" })
+ 
   // let [email, setEmail] = useState("")
   // let [name, setName] = useState("")
   // const{email,name} = data;
@@ -76,6 +75,11 @@ function App() {
   // } 
 
 
+   let [users,setUsers] = useState([])
+  let [data, setData] = useState({ "email": "", "name": "" })
+  const[editId,setEditId] = useState(null);
+  const [del_id,setDel_id]=useState(null)
+
 
   const inputChange = (e) => {
     const { name, value } = e.target
@@ -85,25 +89,37 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // alert([data.email, data.name])
+
+
+if (editId != null) {
+    setUsers(users.map((user) =>
+      user.id === editId
+        ? { ...user, email: data.email, name: data.name }
+        : user
+    ));
+    
+    setData({ email: "", name: "" });
+    setEditId(null);
+  } else {
     let user = {
-      id:Date.now(),
-      name : data.name,
-      email : data.email,
-
-    }
-
-    //  useEffect(()=>{
-    //     console.log(p_data);
-    // },[])
-
-
-    setUsers([...users,user])
-    console.log(users);
-   
+      id: Date.now(),
+      name: data.name,
+      email: data.email,
+    };
+    setUsers([...users, user]);
+    setData({ email: "", name: "" });
   }
+}
 
-  
+useEffect(() => {
+  console.log(users);
+}, [users]);
+
+
+useEffect(()=>{
+  setUsers(users.filter((user) =>user.id !== del_id))
+
+},[])
 
   return (
     <>
@@ -147,7 +163,7 @@ function App() {
 
         <input type='submit' />
       </form>
-      <Table users = {users} setData =  {setData}/>
+      <Table users = {users} setData =  {setData} setEditId={setEditId} setDel_id={setDel_id}/>
      
     </>
   );
