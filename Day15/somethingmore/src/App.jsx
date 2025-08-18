@@ -10,7 +10,8 @@ function App() {
 
 
  
-  // let [email, setEmail] = useState("")
+  // let [ema
+          // setDel_id(id)il, setEmail] = useState("")
   // let [name, setName] = useState("")
   // const{email,name} = data;
 
@@ -116,10 +117,14 @@ useEffect(() => {
 }, [users]);
 
 
-useEffect(()=>{
-  setUsers(users.filter((user) =>user.id !== del_id))
 
-},[])
+// Handle delete when del_id changes
+useEffect(() => {
+  if (del_id !== null) {
+    setUsers((prevUsers) => prevUsers.filter((user) => user.id !== del_id));
+    setDel_id(null);
+  }
+}, [del_id]);
 
   return (
     <>
