@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 
 // import reactLogo from './assets/react.svg'
@@ -6,13 +6,25 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
-  let api = "http://localhost:5000/0"
-    const data = axios.get(api)
-    console.log(data)
+  let api = "http://localhost:5000/"
+  const getData = ()=>{
+    return  axios.get(api)
+
+  }
+  const get =async()=>{
+      let data = await getData()
+      console.log(data)
+  }
+
+  useEffect(()=>{
+    get();
+  })
   return (
     <>
-      
-      
+        <button>
+          Get Data 
+        </button>
+
     </>
   )
 }
