@@ -1,22 +1,24 @@
-[
+{
+  "users": [
     {
-        "persons":[
-            {
-                "id":10,
-                "Name":"Ritika",
-                "Location":"Shanti Vihar"
-            },
-            {
-                "id":20,
-                "Name":"Suresh ",
-                "Location":"KhandarPur"
-            },
-            {
-                "id":30,
-                "Name":"Dabang Pathak",
-                "Location":"Subhash Nagar"
-            }
-        ]
+      "id": 10,
+      "Name": "Ritika",
+      "Location": "Shanti Vihar"
+    },
+    {
+      "id": 20,
+      "Name": "Suresh ",
+      "Location": "KhandarPur"
+    },
+    {
+      "id": 30,
+      "Name": "Dabang Pathak",
+      "Location": "Subhash Nagar"
+    },
+    {
+      "id": "9547",
+      "name": "vighnesh",
+      "location": "shukla"
     }
-
-]
+  ]
+}
