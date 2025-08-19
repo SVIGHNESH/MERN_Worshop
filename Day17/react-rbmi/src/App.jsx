@@ -1,5 +1,6 @@
 import React from 'react'
-import {axios} from "axios"
+import axios from 'axios'
+
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
