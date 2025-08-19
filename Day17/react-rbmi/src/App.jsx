@@ -20,6 +20,9 @@ function App() {
       console.log(data);
     
   };
+
+
+  
   return(
     <>
         <button onClick={() => get(0)}>
