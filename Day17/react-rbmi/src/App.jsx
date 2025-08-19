@@ -6,7 +6,9 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
+    const [data, setData] = useState(null);
     const[form,setForm] = useState({"name":"","location":""})
+
 let api = "http://localhost:5000/users";
 
 const input_change = (e) => {
@@ -27,6 +29,25 @@ const submit = (e) => {
   post(form);
   setForm({ name: "", location: "" });
 };
+const getData = () => {
+    return axios.get(`${api}/${1}`);
+  };
+
+
+  
+  
+ 
+  const get = async (id) => {
+    
+      let data = await getData(id);
+      setData(data);
+      console.log(data);
+    
+  };
+  const update =()=>{
+    let n = data.data;
+    setForm({...form,...n})
+  }
 
   
   return(
@@ -40,6 +61,8 @@ const submit = (e) => {
         onChange={input_change} />
         <input type='submit'/>
        </form>
+
+       <button onClick={update}>Update Data</button>
     </>
   )
 }
