@@ -6,6 +6,7 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
+     const[editId,setEditId] = useState(null)
     const [data, setData] = useState(null);
     const[form,setForm] = useState({"name":"","location":""})
 
@@ -26,15 +27,25 @@ const post = async (d) => {
 const submit = (e) => {
   e.preventDefault();
   console.log(form)
+  if(!editId){
   post(form);
+
   setForm({ name: "", location: "" });
+  }
+  else{
+    const update =async(editId,form)=>{
+        await edit_data(editId,form)
+    }
+  }
 };
 const getData = () => {
     return axios.get(`${api}/${1}`);
   };
 
 
-  
+  const edit_data =(id,data)=>{
+    return axios.put(`${api}/${id}`,data)
+  }
   
  
   const get = async (id) => {
@@ -45,6 +56,7 @@ const getData = () => {
     
   };
   const update =()=>{
+    setEditId(1)
     let n = data.data;
     setForm({...form,...n})
   }
