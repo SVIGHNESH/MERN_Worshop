@@ -2,6 +2,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
+import './custom.scss'
 // import Navbar from './Navbar
 // import Home from './Home'
 
@@ -40,12 +41,12 @@ function App(){
            {/* <p className='bg-danger'>THis is the nAv Bar</p> */}
            <div className='row bg-dark'>
 
-           <div className='col-6 col-md-6 col-lg-6 bg-danger' >1</div>
+           <div className='col-6 col-md-6 col-lg-6 bg-warning' >1</div>
 
            <div className='col-6 col-md-3 col-lg-6 bg-primary'>2</div>
 
            <div className='col-6 col-md-3 col-lg-12 bg-success' >3</div>
-           <div className='col-6 col-md-3 col-lg-12 bg-warning' >4</div>
+           <div className='col-6 col-md-3 col-lg-12 bg-info' >4</div>
           
            {/* <div>5</div>
            <div>6</div> */}
