@@ -1,28 +1,33 @@
-import {BrowserRouter, Route } from 'react-router-dom';
-import {useState} from 'react';
-import Home from './Home.jsx';
-import Navbar from './Navbar';
-function App() {
+import {useEffect, useState} from 'react';
 
+
+function App(){
   const [login,setLogin] = useState(false);
-  return(
-  <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path = '/'  element={<Home></Home>}/>
-
-          <Route path ='/navbar' element={Navbar}/>
-        </Routes>
-
-
-      </BrowserRouter>
-
-      <button onClick={()=> setLogin(true)}>
-        Login
-      </button>
-  </div>
-  );
+  const [dark,setDark] = useState(false);
+  useEffect(()=>{
+      setLogin(localStorage.getItem("login"))
+      console.log(login,"from useEffect");
+  })
   
-}
+  
+  const loogin =()=>{
+    localStorage.setItem("login",true);
+   
+    setLogin(localStorage.getItem("login"))
+          console.log(login,"Inside The Login Function ");
 
-export default App
+  }
+
+  const loogout =()=>{
+      localStorage.getItem("login",false);
+      setLogin(localStorage.getItem("login"))
+     console.log(login,"Inside the Logout Function ");
+  }
+  return(
+    <div>
+      <button style={{background: dark?"black":"blue"}} onClick={loogin}>Login</button>
+      <button onClick={loogout}>Logout</button>
+    </div>
+  );
+}
+export default App;
