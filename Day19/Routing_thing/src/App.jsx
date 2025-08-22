@@ -38,13 +38,14 @@ function App(){
     <div>
       <div className='container-fluid'>
            {/* <p className='bg-danger'>THis is the nAv Bar</p> */}
-           <div className='row'>
+           <div className='row bg-dark'>
 
-           <div className='col-12 col-md-4 col-lg-6 bg-danger' >1</div>
+           <div className='col-6 col-md-6 col-lg-6 bg-danger' >1</div>
 
-           <div className='col-12 col-md-4 col-lg-6 bg-primary'>2</div>
-           
-           <div className='col-12 col-md-4 col-lg-12 bg-success' >3</div>
+           <div className='col-6 col-md-3 col-lg-6 bg-primary'>2</div>
+
+           <div className='col-6 col-md-3 col-lg-12 bg-success' >3</div>
+           <div className='col-6 col-md-3 col-lg-12 bg-warning' >4</div>
           
            {/* <div>5</div>
            <div>6</div> */}
