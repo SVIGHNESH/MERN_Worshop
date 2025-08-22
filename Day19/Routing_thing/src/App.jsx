@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 
+// import Home from './Home'
 
 function App(){
   const [login,setLogin] = useState(false);
@@ -27,6 +28,7 @@ function App(){
     <div>
       <button style={{background: dark?"black":"blue"}} onClick={loogin}>Login</button>
       <button onClick={loogout}>Logout</button>
+      {/* <Home/> */}
     </div>
   );
 }
