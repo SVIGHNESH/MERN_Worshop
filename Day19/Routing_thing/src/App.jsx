@@ -41,12 +41,12 @@ function App(){
            {/* <p className='bg-danger'>THis is the nAv Bar</p> */}
            <div className='row bg-dark'>
 
-           <div className='col-6 col-md-6 col-lg-6 bg-warning' >1</div>
+           <div className='col-6 col-md-6 col-lg-6 bg-primary' >1</div>
 
            <div className='col-6 col-md-3 col-lg-6 bg-primary'>2</div>
 
-           <div className='col-6 col-md-3 col-lg-12 bg-success' >3</div>
-           <div className='col-6 col-md-3 col-lg-12 bg-info' >4</div>
+           <div className='col-6 col-md-3 col-lg-12 bg-primary-100' >3</div>
+           <div className='col-6 col-md-3 col-lg-12 bg-warning-500' >4</div>
           
            {/* <div>5</div>
            <div>6</div> */}

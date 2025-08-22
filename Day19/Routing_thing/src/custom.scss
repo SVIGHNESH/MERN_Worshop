@@ -3,6 +3,7 @@
 
 // Customize theme colors with shades
 $theme-colors: (
+  // Primary
   "primary": #0d6efd,
   "primary-100": #cfe2ff,
   "primary-200": #9ec5fe,
@@ -12,7 +13,91 @@ $theme-colors: (
   "primary-600": #0a58ca,
   "primary-700": #084298,
   "primary-800": #052c65,
-  "primary-900": #031633
+  "primary-900": #031633,
+
+  // Secondary (Gray)
+  "secondary": #6c757d,
+  "secondary-100": #f8f9fa,
+  "secondary-200": #e9ecef,
+  "secondary-300": #dee2e6,
+  "secondary-400": #ced4da,
+  "secondary-500": #adb5bd,
+  "secondary-600": #6c757d,
+  "secondary-700": #495057,
+  "secondary-800": #343a40,
+  "secondary-900": #212529,
+
+  // Success (Green)
+  "success": #198754,
+  "success-100": #d1e7dd,
+  "success-200": #a3cfbb,
+  "success-300": #75b798,
+  "success-400": #479f76,
+  "success-500": #198754,
+  "success-600": #146c43,
+  "success-700": #0f5132,
+  "success-800": #0a3622,
+  "success-900": #051b11,
+
+  // Danger (Red)
+  "danger": #dc3545,
+  "danger-100": #f8d7da,
+  "danger-200": #f1aeb5,
+  "danger-300": #ea868f,
+  "danger-400": #e35d6a,
+  "danger-500": #dc3545,
+  "danger-600": #b02a37,
+  "danger-700": #842029,
+  "danger-800": #58151c,
+  "danger-900": #2c0b0e,
+
+  // Warning (Yellow)
+  "warning": #ffc107,
+  "warning-100": #fff3cd,
+  "warning-200": #ffe69c,
+  "warning-300": #ffda6a,
+  "warning-400": #ffcd39,
+  "warning-500": #ffc107,
+  "warning-600": #cc9a06,
+  "warning-700": #997404,
+  "warning-800": #664d03,
+  "warning-900": #332701,
+
+  // Info (Cyan)
+  "info": #0dcaf0,
+  "info-100": #cff4fc,
+  "info-200": #9eeaf9,
+  "info-300": #6edff6,
+  "info-400": #3dd5f3,
+  "info-500": #0dcaf0,
+  "info-600": #0aa2c0,
+  "info-700": #087990,
+  "info-800": #055160,
+  "info-900": #032830,
+
+  // Light
+  "light": #f8f9fa,
+  "dark": #212529,
+
+  // Extra colors (Indigo, Purple, Pink, Orange, Teal, etc.)
+  "indigo": #6610f2,
+  "indigo-100": #e0cffc,
+  "indigo-200": #c29ffa,
+  "indigo-300": #a370f7,
+  "indigo-400": #8540f5,
+  "indigo-500": #6610f2,
+  "indigo-600": #520dc2,
+  "indigo-700": #3d0a91,
+  "indigo-800": #290661,
+  "indigo-900": #140330,
+
+  "purple": #6f42c1,
+  "pink": #d63384,
+  "orange": #fd7e14,
+  "teal": #20c997,
+  "cyan": #0dcaf0,
+  "black": #000,
+  "white": #fff
 );
 
 // Import full Bootstrap
