@@ -21,7 +21,7 @@ let data = [
 
 
 app.get("/", (req, res) => {
-    res.send("Server is running!");
+    res.send(data);
 });
 
 
@@ -43,5 +43,5 @@ app.get("/:id", (req, res) => {
 });
 
 app.listen(5000, () => {
-    console.log("working from 5000");
+    console.log("working on 5000");
 });  
