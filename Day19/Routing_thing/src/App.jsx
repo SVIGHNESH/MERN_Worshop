@@ -38,6 +38,7 @@ function App(){
 
     <div>
       <div className='container-fluid'>
+  return
            {/* <p className='bg-danger'>THis is the nAv Bar</p> */}
            <div className='row bg-dark'>
 
