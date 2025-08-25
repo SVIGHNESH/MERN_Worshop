@@ -42,6 +42,15 @@ app.get("/:id", (req, res) => {
     }
 });
 
+app.put('/:id',(req,res)=>{
+    let {id}  = req.params
+    let u_data = req.body;
+    data = data.map((user)=>{
+        return user.id == id ? {...user, ...u_data} : user
+    })
+    res.send(data)
+})
+
 app.listen(5000, () => {
     console.log("working on 5000");
 });  
