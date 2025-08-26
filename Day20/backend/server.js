@@ -36,7 +36,7 @@
 //     let { id } = req.params;
 //     const user = data.find(item => item.id === parseInt(id));
 //     if (user) {
-//         res.json(user);
+//         res.json(user)
 //     } else {
 //         res.status(404).json({ error: "User not found" });
 //     }
