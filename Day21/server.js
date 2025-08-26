@@ -41,6 +41,14 @@ app.post("/", (req, res) => {
   res.send(data);
 });
 
+app.put('/:id',(req,res)=>{
+    let {id}  = req.params
+    let u_data = req.body;
+    data = data.map((user)=>{
+        return user.id == id ? {...user, ...u_data} : user
+    })
+    res.send(data)
+})
 
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
