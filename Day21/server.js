@@ -11,7 +11,6 @@ let data = [{
 
     "name":"Ritik",
     "location":"NY"
-
 },{
     "id":3,
 
