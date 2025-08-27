@@ -1,7 +1,15 @@
-const express = require("express");
+import express from "express";
+import './db.js';
+import cors from "cors";
+import { Login } from "./router.js";
+import LoginModel from "./module.js";
 
-let app = express();
+const app = express();
 app.use(express.json());
+app.use(cors());
+app.use("/", Login);
+
+
 
 let data = [{
     "id":1,
