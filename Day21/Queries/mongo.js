@@ -46,6 +46,7 @@ const queries = async() => {
 
 
     //UPDATION
+    
     // await Login.updateMany({username:"Suresh Rajpoot "},{$set:{password:"12345678"}})
     // await Login.updateMany({username:"1234567"},{$set:{username:"Suresh Rajpoot"}})
 
